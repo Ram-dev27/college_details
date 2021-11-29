@@ -1,38 +1,56 @@
 .App {
-  text-align: center;
-}
+  height: 100vh;
+  width: 100vw;
+  display:flex
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  margin:0;
+  padding: 0;
 }
+ 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+/* College table design */
+.paginationButtns{
+  width: 80%;
+  height: 40px;
+  list-style: none;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
 }
+ .paginationButtns a{
+   padding: 10px;
+   margin: 8px;
+   border-radius: 5px;
+   border: 1px solid #471be4;
+   color: #471be4;
+   cursor: pointer;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ .paginationButtns a:hover{
+   color: white;
+   background-color: #471be4;
+ }
+ .paginationActive a {
+   color: white;
+   background-color: #471be4;
+     
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ /* Navigation Bar design */
+
+ .NavBar{
+   width: 100%;
+   height: 35px;
+   background-color: #2F4050;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .NavBar a{
+   text-decoration: none;
+   color: white;
+   margin: 5px;
+ }
